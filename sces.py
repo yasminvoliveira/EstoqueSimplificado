@@ -22,6 +22,8 @@ def novoprodutos():
     novoproduto = input("Insira o nome do produto que deseja adicionar:")
 
     quantidade = int(input("Insira a quantidade do produto que deseja adicionar:"))
+    if quantidade -0:
+        print("Insuficiente, tente novamente...")
 
     localizacao = input("Insira a localização do produto que deseja adicionar:")
 
@@ -73,11 +75,14 @@ def Qtd_Produto():
                 Produtos.pop(ProdutoP)
                 print("O Produto foi excluído do estoque")
 
+
             else:
                 Produtos[i][2] = (novaqnt)
                 print("O estoque atualizado ficou:")
                 print(Produtos)
                 travarMenu()
+            if novaqnt -0:
+                print("Insuficiente, tente novamente...")
 
     if coluna == -1:
         print("O produto não está cadastrado!")
