@@ -107,3 +107,6 @@ while True: ##Repete
     elif (opcao == "5"):
         print("")
         break
+
+
+    ## Discuti com Zanata
